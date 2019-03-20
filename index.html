@@ -54,15 +54,36 @@
 </nav>
 
 <div id="mySidenav" class="sidenav">
-	<button><a id="speakerform">Speaker Form</a></button>
-	<button><a id="attendeeform">Attendee Form</a></button>
+	<button id="myBtn"><a id="speakerform">Speaker Form</a></button>
+	<button id="myBtn2"><a id="attendeeform">Attendee Form</a></button>
 </div>
 
 <section class="main" style="overflow:hidden;">
 	<iframe  src="main_particle/index.html" height="400%" width="200%" style="margin-top:-10%; margin-left: -40%"></iframe>
 </section>
 
+<!-- speaker-modal -->
+<div id="myModal" style="z-index:11;" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Speaker Modal..</p>
+  </div>
+
+</div>
+
+
+<!-- attendee modal -->
+<div id="myModal2" style="z-index:11;" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the attendee Modal..</p>
+  </div>
+
+</div>
 
 <section class="countdown">
 	<div class="content">
@@ -773,6 +794,52 @@ var x = setInterval(function() {
 	  }, delta);
 	};
 	
+var modal = document.getElementById('myModal');
+var modal2 = document.getElementById('myModal2');
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var btn2 = document.getElementById("myBtn2");
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[1];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+	modal2.style.display = "none";
+}
+
+btn2.onclick = function(){
+	modal2.style.display = "block";
+	modal.style.display = "none";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+	modal2.style.display = "none";
+}
+
+span1.onclick = function() {
+  modal2.style.display = "none";
+	modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+		modal2.style.display = "none";
+  }
+
+	if (event.target == modal2) {
+    modal2.style.display = "none";
+		modal.style.display = "none";
+  }
+}
+
 	window.onload = function() {
 	  var elements = document.getElementsByClassName('txt-rotate');
 	  for (var i=0; i<elements.length; i++) {
