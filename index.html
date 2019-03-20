@@ -53,6 +53,10 @@
 	</div>
 </nav>
 
+<div id="mySidenav" class="sidenav">
+  <a id="speakerform">Speaker Form</a>
+  <a id="attendeeform">Attendee Form</a>
+</div>
 
 <section class="main" style="overflow:hidden;">
 	<iframe  src="main_particle/index.html" height="400%" width="200%" style="margin-top:-10%; margin-left: -40%"></iframe>
@@ -643,6 +647,34 @@ img {
 img:hover {
   -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(100%); /* FF 35+ */
+}
+
+#mySidenav a {
+  position: fixed;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  z-index: 1000;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  background-color: #c00;
+}
+
+#speakerform {
+  top: 280px;
+  background-color: #555;
+}
+
+#attendeeform {
+  top: 400px;
+  background-color: #555;
 }
 </style>
 
