@@ -1,6 +1,6 @@
 .demo-3 {
 	--color-text: #454847;
-	--color-bg: #1d2121;
+	--color-bg: #0000;
 	--color-link: #454847;
 	--color-link-hover: #fff;
 	--color-info: #454847;
@@ -110,21 +110,22 @@
 }
 
 .grid {
+	background-color: #000000;
 	margin: 10px;
     position: absolute;
 	align-content: center;
 	: center;
     padding: 50px 10px;
     width: 100%;
-    max-width: 1000px;
 	justify-content:space-between;
 	display: flex;
     flex-wrap:wrap;
 }
 
 .grid__item {
-    margin:  1 1vh;
-	padding: 10px;
+    margin:  2vh 2vh;
+	padding: 15px;
+	align-self: center;
     position: relative;
 height: auto;
 width: auto;}
@@ -135,7 +136,9 @@ width: auto;}
 	font-size: 190%;
 	color:white;
 	font-family: 'Barlow', sans-serif;
-	font-weight: 600;
+	font-weight: 
+		600;
+	background-color: aliceblue
 	padding: 31vh 0.5em 0;
 	top: 0;
 	pointer-events: none;
