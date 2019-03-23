@@ -289,3 +289,17 @@ a.demo--current {
 		margin: 0 0.5em;
 	}
 }
+
+
+::-webkit-scrollbar {
+    width: 0.2em;
+}
+::-webkit-scrollbar-button {
+    background: #ccc;
+}
+::-webkit-scrollbar-track-piece {
+    background: #888;
+}
+::-webkit-scrollbar-thumb {
+    background: #eee;
+}​
