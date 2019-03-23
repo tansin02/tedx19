@@ -427,3 +427,7 @@ p {
   font-size: 2rem;
   font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif
 }
+
+iframe{
+  border: none;
+}
