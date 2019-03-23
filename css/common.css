@@ -430,4 +430,5 @@ p {
 
 iframe{
   border: none;
+  overflow: hide;
 }
