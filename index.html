@@ -55,11 +55,19 @@
 	</div>
 </nav>
 
-<div id="mySidenav" class="sidenav">
+<!--<div id="mySidenav" class="sidenav">
 	<a href="speaker_form.html" target="_blank" id="speakerform">Speaker Form</a>
 	<a href="attendee_form.html" target="_blank" id="attendeeform">Attendee Form</a>
+</div>-->
+
+<div id="mybutton">
+	<button class="feedback"><a href="speaker_form.html">Speaker Form</a></button>
 </div>
 
+<div id="mybutton2">
+<button class="feedback"><a href="attendee_form.html">Attendee Form</a></button>
+</div>
+	
 <section class="main" style="overflow:hidden;">
 	<iframe  src="main_particle/index.html" height="400%" width="200%" style="margin-top:-10%; overflow: hidden; margin-left: -40%"></iframe>
 </section>
@@ -691,6 +699,28 @@ onsubmit="submitted=true;">
 <div class="dark-screen"></div>
 
 <style>
+.feedback {
+  background-color : #c00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: rgb(0,0,0);
+}
+
+#mybutton {
+  position: fixed;
+  bottom: 35px;
+  left: 100px;
+  z-index: 100;
+}
+
+#mybutton2 {
+  position: fixed;
+  bottom: 35px;
+  right: 100px;
+  z-index: 100;
+}
+
 .box{
         float:left;
         overflow: hidden;
