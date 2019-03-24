@@ -191,11 +191,11 @@ onsubmit="submitted=true;">
 		<h2 style="font-size:2.5rem;">Theme</h2>
 		<hr style="border:3px solid #c00; width: 4rem;"></hr>
 		<h1  style="color:rgb(0,0,0);margin-top:10%;">
-				<div
-				class="txt-rotate"
-				data-period="1000"
-				data-rotate='[ "The Power of Doubt.", "The Power of Doubt.", "The Power of Doubt.", "The Power of Doubt.", "The Power of Doubt." ]'></div>
-			</h1>
+				        <span
+				        class="txt-rotate"
+				        data-period="1000"
+				        data-rotate='[ "The Power of Doubt.", "The Power of Doubt.", "The Power of Doubt.", "The Power of Doubt.", "The Power of Doubt." ]'></span>
+				      </h1>
 	</div>
 	<div class="gallery-wrapper speaker-gal">
 		<p data-aos="fade-up" style="text-align:justify">Khalil Gibran once said, “Doubt is a pain too lonely to know that faith is his twin brother.” Along with its conventional interpretation, one may also notice that the birth of ideas arises from doubt, and ideas themselves give one faith to believe in something that will truly impact everything that is around him. Going on these lines, we at TEDxDTU aim to spread around “The Power of Doubt”. We aim for one to ask themselves, “Have I doubted? Have I questioned? Have I inquired?” Doubt is the genesis of Ideas Worth Spreading, and our ultimate goal is to tap into the unlimited potential of everyone to think and make an impact on the society.</p>
@@ -721,6 +721,22 @@ onsubmit="submitted=true;">
   z-index: 100;
 }
 
+
+@media screen and (max-width:676px){
+	#mybutton {
+  position: fixed;
+  bottom: 35px;
+  left: 10px;
+  z-index: 100;
+}
+
+#mybutton2 {
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+  z-index: 100;
+}
+}
 .box{
         float:left;
         overflow: hidden;
@@ -863,6 +879,7 @@ var x = setInterval(function() {
 		that.tick();
 	  }, delta);
 	};
+	
 	
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
