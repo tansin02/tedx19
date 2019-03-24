@@ -6,15 +6,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 html {
-	background: #1d2121;
+	background: #000000;
 }
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	min-height: 100vh;
-	color: #57585c;
+	color: #000;
 	color: var(--color-text);
-	background-color: #fff;
+	background-color: #000000;
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
