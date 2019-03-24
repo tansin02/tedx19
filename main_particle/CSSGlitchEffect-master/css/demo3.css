@@ -115,15 +115,20 @@
 		position: absolute;
 		align-content: center;
 		width: 100%;
+		padding: 10px;
+		margin:auto;
 		justify-content:space-between;
 	
 	}
 }
 
 .grid {
+<<<<<<< HEAD
 	background-color: #000000;
 	margin: 10px;
+=======
 	
+>>>>>>> 37c2278bb2a0eb0717cd4caa5a5b2c5dc6670e6f
     position: absolute;
 	align-content: center;
     width: 100%;
@@ -136,35 +141,33 @@
 	padding: 15px;
 	align-self: center;
     position: relative;
-	height: auto;
-	width: auto;
+	height: 250px;
+	width: 100px;
 }
 
 .row{
 	padding: 5px;
+	align-content: center;
 }
 
 .grid__item-title {
 	position: absolute;
-	margin: 0;
-	font-size: 190%;
-	color:white;
+	margin-top: 280px;
+	font-size: 150%;
+	color:black;
 	font-family: 'Barlow', sans-serif;
+	text-align: right;
 	font-weight: 
 		600;
+	text-align: left;
 	background-color: aliceblue;
-	padding: 31vh 0.5em 0;
+	padding: 0.9vh;
 	top: 0;
 	pointer-events: none;
 	line-height: 1;
 }
 
-.grid__item:nth-child(odd) .grid__item-title {
-	right: 0;
-	text-align: right;
-	color:black;
-	padding-top: 10vh;
-}
+
 
 .grid__item-title span {
 	display: block;
@@ -190,11 +193,12 @@ color: red;}
 .glitch {
 	position: relative;
 	width: var(--glitch-width);
-	max-width: 300px;
+	max-width: 230px;
 	height: var(--glitch-height);
 	max-height: calc(300px * 1.25);
 	overflow: hidden;
 	margin: 0 auto;
+	padding: ;
 }
 
 .glitch:hover {
