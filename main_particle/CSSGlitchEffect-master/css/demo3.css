@@ -79,7 +79,7 @@
 
 .glitch--style-5 {
 	--gap-horizontal: 50px;
-	--gap-vertical: 100px;
+	--gap-vertical: 10px;
 	--time-anim: 2.25s;
 	--blend-mode-1: none;
 	--blend-mode-2: none;
@@ -95,7 +95,7 @@
 
 .glitch--style-6 {
 	--gap-horizontal: 3px;
-	--gap-vertical: 70px;
+	--gap-vertical: 20px;
 	--time-anim: 2.25s;
 	--blend-mode-1: none;
 	--blend-mode-2: none;
