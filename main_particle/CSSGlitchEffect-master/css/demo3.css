@@ -25,6 +25,21 @@
 	--blend-color-3: transparent;
 	--blend-color-4: transparent;
 	--blend-color-5: transparent;
+}.glitch--style-8 {
+	--gap-horizontal: 20px;
+	--gap-vertical: 2px;
+	flex:1;
+	--time-anim: 2.25s;
+	--blend-mode-1: none;
+	--blend-mode-2: none;
+	--blend-mode-3: none;
+	--blend-mode-4: none;
+	--blend-mode-5: none;
+	--blend-color-1: transparent;
+	--blend-color-2: transparent;
+	--blend-color-3: transparent;
+	--blend-color-4: transparent;
+	--blend-color-5: transparent;
 }
 
 .glitch--style-2 {
@@ -62,6 +77,21 @@
 }
 
 .glitch--style-4 {
+	--gap-horizontal: 5px;
+	--gap-vertical: 20px;
+	--time-anim: 5s;
+	--blend-mode-1: none;
+	--blend-mode-2: exclusion;
+	--blend-mode-3: hard-light;
+	--blend-mode-4: overlay;
+	--blend-mode-5: none;
+	--blend-color-1: transparent;
+	--blend-color-2: #52f1cd;
+	--blend-color-3: #525df1;
+	--blend-color-4: #f19b52;
+	--blend-color-5: transparent;
+}
+.glitch--style-7 {
 	--gap-horizontal: 5px;
 	--gap-vertical: 20px;
 	--time-anim: 5s;
@@ -212,6 +242,13 @@ color: red;}
 	background-blend-mode: var(--blend-mode-1);
 }
 
+
+.glitch--style-7 .glitch__img{
+	background-image: url(../img/ram%20samparth.jpg)
+}
+.glitch--style-8 .glitch__img{
+	background-image: url(../img/AJ.jpg)
+}
 .glitch--style-2 .glitch__img {
 	background-image: url(../img/2.jpg);
 }
